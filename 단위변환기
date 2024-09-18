@@ -1,0 +1,39 @@
+### 단위 변환기 GUI ###
+# 1. feet를 cm로 변환
+# 2. cm를 feet로 변환
+# ft란? 1ft당 30.48cm
+
+# from tkinter import *
+
+# root = Tk()
+# root.title("단위 변환기 GUI")
+
+# # ft를 cm로 변환하는 이벤트 함수
+# def ft2cm():
+#     ft2cm = entry1.get() # 입력받는 entry라는 부분의 값을 가져온다
+#     entry2.delete(0,  'end') # 사용자의 입력 값을 삭제
+#     entry2.insert(0,  round(float(ft2cm)*30.48,4))
+#     # 사용자 입력 값에 변환 값을 넣어주고 소수점 4번째 자리까지 반올림 및 출력
+
+# def cm2ft():
+#     cm2ft = entry2.get() # 입력받는 entry라는 부분의 값을 가져온다
+#     entry1.delete(0,  'end') # 사용자의 입력 값을 삭제
+#     entry1.insert(0,  round(float(cm2ft)/30.48,4))
+
+# ### grid(row, column) ==> 현 GUI의 상태 (3X2) ※ grid는 0부터 시작
+# #단위 입력 받는 Entry (총 2개)
+# entry1 = Entry(root)
+# entry2 = Entry(root)
+# entry1.grid(row=0, column=1)
+# entry2.grid(row=1, column=1)
+
+
+# #레이블 위치 지정
+# label1 = Label(root, text='피트(ft)').grid(row=0, column=0)
+# label2 = Label(root, text='센치미터(cm)').grid(row=1, column=0)
+
+# #변환 버튼 위치 및 함수 설정
+# btn1 = Button(root, text='ft >> cm', command=ft2cm).grid(row=2, column=0)
+# btn2 = Button(root, text='ft >> cm', command=cm2ft).grid(row=2, column=1)
+
+# root.mainloop()
